@@ -1,14 +1,17 @@
-myDescription = input(" Please enter the following:")
-myFeeling = input(" Adjective:")
-myPet = input(" Animal:")
-myWord = input(" verb:")
-myEctstasi = input("exclamation :")
-myWord = input(" verb:")
-myWord = input(" verb:")
+word_games=input("please enter the following:")
 
 
-print(" My story: +The other day I was really in trouble. It all started when I saw a very "+  "myFeeling " +
-+ "myPet" +  " " + "myword"+ " " + down the hallway.  + "my Estasi!"+ I yelled. But all
-I could think to do was to [verb] over and over. Miraculously,
-that caused it to stop, but not before it tried to + " " + myword + " " +
-right in front of my family.")
+
+adjective=input("adjective:happy")
+animal=input("animal:zebra")
+verb=input("verb:sneeze")
+exclamation=input("exclamation:Wow!")
+read=input("verb:read")
+drive=input(" verb:drive")
+
+
+story = input("your story is :")
+
+print("The other day, I was really in trouble. It all started when I saw a very" + ' ' + adjective + animal + verb +"  down the hallway. " 
++ exclamation + " " + "I yelled. But all I could think to do was to  " + " "  + read +
+" Miraculously, that caused it to stop, but not before it tried to" + " " + drive + "right in front of my family." )
