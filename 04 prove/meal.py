@@ -12,8 +12,8 @@ sales_tax_rate = input("Enter sales tax:")
 # subtotal = int(( children_number * child_meal) + int (adults_number * adult_meal))
 subtotal = (int(children_number) * int(child_meal)) + (int(adults_number) * int(adult_meal))
 
-sales_tax = print(subtotal * int(sales_tax_rate) / 100)
-total_price = print(subtotal + int(sales_tax_rate))
+sales_tax = subtotal * int(sales_tax_rate) / 100
+total_price = subtotal + int(sales_tax_rate)
 
 payment = input( "How much did you pay?")
 
@@ -22,4 +22,4 @@ print(sales_tax_rate)
 print(payment)
 print(total_price)
 
-change = int(payment) -  int(total_price)
+change = int(payment) -  total_price
