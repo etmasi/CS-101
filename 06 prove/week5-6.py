@@ -1,33 +1,45 @@
-print("Answer to each of these questions by providing  a 1-10 rating score:")
+print("You are in the middle of the woods; you are tired and hungry in the distance you see a house")
 
-loan_amount = int(input("How much is the amount  the loan? "))
-credit_report = int(input("How solid is your credit report? "))
-income_month = int(input("How high is your monthly income? "))
-down_payment = int(input("How big is your down payment? "))
+start =input(" what should I do?-> a)walk to the house  b) climb a tree to view it better---")
 
-plan_loan = False
 
-if loan_amount >= 6:
-    if credit >= 7 and income >= 7:
-        plan_loan = True
-    elif credit >= 7 or income >= 7:
-        if down_payment >= 8:
-            plan_loan = True
-        else:
-            plan_loan = False
+if start.lower() == "walk to the house":
 
-else:/* */
-    if credit < 5:
-        plan_loan = False
-    else:
-        if income >= 7 or down_payment >= 7:
-            plan_loan = True
-        elif income >= 5 and down_payment >= 5:
-            plan_loan = True
-        else:
-            plan_loan = False
+    
+    a1 =input(" You knock at the door, but nobody answers -> a) open the door b)go to the back of the house---")
+    if a1.lower() == "open the door":
+        a2 = input("You decide to wait for some minutes just to see -> a)somebody will come   b)will never come--")
+        if a2.lower() == "somebody will come":
+            print("end of story")
 
-if plan_loan:
-    print("Please, offer the client the  loan.")
-else:
-    print("The decision is negative. You should not loan the money.")
+        elif a2.lower()== "will never come":
+            print("end of story")
+
+    elif a1.lower() == "go to back of the house":
+        a2 = input("Maybe  a) you will find someone b) no one might be there--")
+        if a2.lower()== "you will find someone":
+            print("end of story")
+
+        elif a2.lower() == "no one might be there":
+            print("end of story")
+
+
+elif start.lower() == "climb a tree to view it better":
+    b1=input("Fortunately, somebody lets you come in and ask you -> a) drink tea b)drink caffe ")
+    if b1.lower()=="drink tea":
+        b2= input("After deciding what to drink-> a): give the reason why you came for b)leave")
+        if b2.lower()== "give the reason why you came for":
+            print("end of story")
+
+        elif b2.lower() == "leave":
+            print("end of the story")
+
+    elif b1.lower()=="drink caffe":
+        print("go find your family") 
+    
+
+
+exit=input("press close to exit")
+  
+
+
