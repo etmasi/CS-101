@@ -23,7 +23,8 @@ image_original.save("the_file_goes_here.jpg")
 image_new = Image.new("RGB", image_original.size)
 pixels_new = image_new.load()
 
-pixels_new[x, y] = (r, g, b)
+# print(pixels_new)
+pixels_new[0, 1] = (r, g, b)
 
 
 image_new.show()
